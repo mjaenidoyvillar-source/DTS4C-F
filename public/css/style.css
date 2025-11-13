@@ -1,0 +1,343 @@
+/* Login Form Styles - Bootstrap Compatible */
+
+/* Navy color variables */
+:root {
+    --navy-900: #0f172a;
+    --navy-800: #1e293b;
+  }
+  
+  /* Document Tracking System Title */
+  .system-title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .system-title h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--navy-900);
+    margin: 0;
+    letter-spacing: -0.5px;
+  }
+  
+  .system-title img {
+    height: 64px;
+    width: auto;
+    object-fit: contain;
+  }
+  
+  @media (max-width: 576px) {
+    .system-title h1 {
+      font-size: 2rem;
+    }
+    
+    .system-title img {
+      height: 48px;
+    }
+  }
+  
+  /* Main container - overrides Bootstrap defaults */
+  .login-container {
+    background-color: white;
+    border-radius: 1rem;
+    border: 2px solid var(--navy-900);
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  .login-header {
+    background-color: var(--navy-900);
+    color: white;
+    padding: 1.5rem 2rem;
+  }
+  
+  .login-header h2 {
+    font-size: 1.875rem;
+    text-align: center;
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  /* Form Body */
+  .login-body {
+    background-color: #f9fafb;
+    padding: 2rem;
+  }
+  
+  /* Override Bootstrap form control styles */
+  .login-form .form-control {
+    padding: 0.75rem 1rem;
+    background-color: white;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: all 0.15s ease;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  .login-form .form-control:focus {
+    border-color: var(--navy-900);
+    box-shadow: 0 0 0 0.2rem rgba(15, 23, 42, 0.25);
+    background-color: white;
+  }
+  
+  /* Form labels */
+  .login-form .form-label {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Password Field - Input Group */
+  .login-form .input-group .form-control {
+    padding-right: 3rem;
+  }
+  
+  /* Password Toggle Button */
+  .password-toggle-btn {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #4b5563;
+    cursor: pointer;
+    padding: 0.25rem;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.15s ease;
+  }
+  
+  .password-toggle-btn:hover {
+    color: #1f2937;
+  }
+  
+  .password-toggle-btn:focus {
+    outline: none;
+  }
+  
+  .password-toggle-btn svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  /* Login Button - Override Bootstrap button */
+  .btn-login {
+    background-color: var(--navy-900);
+    border-color: var(--navy-900);
+    color: white;
+    font-weight: 700;
+    padding: 0.75rem 2rem;
+    border-radius: 50rem;
+    transition: background-color 0.15s ease;
+    font-size: 1rem;
+  }
+  
+  .btn-login:hover {
+    background-color: var(--navy-800);
+    border-color: var(--navy-800);
+    color: white;
+  }
+  
+  .btn-login:focus,
+  .btn-login:active {
+    background-color: var(--navy-800);
+    border-color: var(--navy-800);
+    box-shadow: 0 0 0 0.2rem rgba(15, 23, 42, 0.5);
+  }
+  
+  /* Terms and Conditions */
+  .terms-link {
+    color: var(--navy-900);
+    text-decoration: underline;
+    font-weight: 600;
+  }
+  
+  .terms-link:hover {
+    color: var(--navy-800);
+    text-decoration: underline;
+  }
+  
+  .form-check-label {
+    font-size: 0.875rem;
+    color: #1f2937;
+    line-height: 1.5;
+  }
+  
+  .form-check-input:checked {
+    background-color: var(--navy-900);
+    border-color: var(--navy-900);
+  }
+  
+  .form-check-input:focus {
+    border-color: var(--navy-900);
+    box-shadow: 0 0 0 0.2rem rgba(15, 23, 42, 0.25);
+  }
+  
+  /* Terms Modal Content */
+  .terms-content {
+    max-height: 60vh;
+    overflow-y: auto;
+    padding: 1.5rem;
+    line-height: 1.7;
+  }
+  
+  .terms-content h6 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--navy-900);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .terms-content h6:first-of-type {
+    margin-top: 0;
+  }
+  
+  .terms-content p {
+    margin-bottom: 1rem;
+    color: #374151;
+  }
+  
+  .terms-content ul {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+  
+  .terms-content li {
+    margin-bottom: 0.5rem;
+    color: #374151;
+  }
+  
+  .terms-content strong {
+    color: var(--navy-900);
+    font-weight: 600;
+  }
+  
+  .terms-content a {
+    color: var(--navy-900);
+    text-decoration: underline;
+  }
+  
+  .terms-content a:hover {
+    color: var(--navy-800);
+  }
+  
+  /* Terms Accept Button */
+  #acceptTermsBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  
+  #acceptTermsBtn:not(:disabled):hover {
+    background-color: var(--navy-800);
+    border-color: var(--navy-800);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .login-container {
+      border-radius: 0.5rem;
+      margin: 1rem;
+      max-width: calc(100% - 2rem);
+    }
+    
+    .login-header {
+      padding: 1.25rem 1.5rem;
+    }
+    
+    .login-header h2 {
+      font-size: 1.5rem;
+    }
+    
+    .login-body {
+      padding: 1.5rem;
+    }
+    
+    .system-title h1 {
+      font-size: 1.75rem;
+    }
+    
+    .system-title img {
+      height: 40px;
+    }
+    
+    .system-title .d-flex {
+      flex-direction: column;
+      gap: 0.5rem !important;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .login-container {
+      border-radius: 0.5rem;
+      margin: 0.5rem;
+      max-width: calc(100% - 1rem);
+      border-width: 1px;
+    }
+    
+    .login-header {
+      padding: 1rem 1.25rem;
+    }
+    
+    .login-header h2 {
+      font-size: 1.25rem;
+    }
+    
+    .login-body {
+      padding: 1.25rem;
+    }
+    
+    .system-title {
+      margin-bottom: 1.5rem;
+    }
+    
+    .system-title h1 {
+      font-size: 1.5rem;
+    }
+    
+    .system-title img {
+      height: 36px;
+    }
+    
+    .btn-login {
+      width: 100%;
+      padding: 0.75rem 1.5rem;
+    }
+    
+    .form-control,
+    .form-select {
+      font-size: 16px; /* Prevents zoom on iOS */
+    }
+    
+    .terms-content {
+      max-height: 50vh;
+      padding: 1rem;
+    }
+    
+    .terms-content h6 {
+      font-size: 0.9375rem;
+    }
+    
+    .terms-content p,
+    .terms-content li {
+      font-size: 0.875rem;
+    }
+    
+    .modal-dialog {
+      margin: 0.5rem;
+      max-width: calc(100% - 1rem);
+    }
+    
+    .modal-lg {
+      max-width: calc(100% - 1rem);
+    }
+  }
